@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');  /* import fonts from google - always on top of CSS file */
+
+header {
+	height: 100px;
+	width: 100%;
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #303030; /*bottom border for the header */
+    position: fixed; /* makes the header static/fixed*/
+    margin:0px auto;
+    top: 0px;
+    font-family: 'Homemade Apple', cursive;  /*recalled the font imported on top of the CSS file*/
+}
+
+body{ 
+	padding-top: 130px; /*padding allows the header not overlap the text - basically realigns the content below the header (header height is the same as the the padding!)*/
+	padding-bottom: 700px;
+}
+
+
+/*set the columns to be 3 per page by setting the float at 33%*/
+.column {  
+  float: left;
+  width: 33.33%;
+}
+
+
+/* modifed the images (iframe) opacity when the cursor is on them*/
+.iframe {
+  opacity: 1.0;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.iframe:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+footer {
+	height: 40px;
+	width: 100%;
+    background-color: #FFFFFF;
+    border-top: 0px solid #303030; /*bottom border for the header */
+    position: fixed; /* makes the header static/fixed*/
+    margin:0px auto;
+    bottom: 0px;
+    font-family: 'Homemade Apple';  /*recalled the font imported on top of the CSS file*/
+    font-size: 10px;
+}
